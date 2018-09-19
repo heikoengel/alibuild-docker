@@ -18,4 +18,3 @@ RUN pip install -U pip alibuild
 RUN mkdir -p /alice
 WORKDIR /alice
 ENV ALIBUILD_WORK_DIR "/alice/sw"
-RUN aliBuild init O2 --defaults o2
