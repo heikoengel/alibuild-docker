@@ -11,7 +11,7 @@ RUN yum install -y emacs
 RUN yum install -y centos-release-scl
 RUN yum-config-manager --enable rhel-server-rhscl-7-rpms
 RUN yum install -y devtoolset-7
-ENV PATH /opt/rh/devtoolset-7/root/usr/bin:$PATH
+# ENV PATH /opt/rh/devtoolset-7/root/usr/bin:$PATH
 
 # Install & set up aliBuild
 RUN pip install -U pip alibuild
